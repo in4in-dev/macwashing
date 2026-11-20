@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 640 420">
+  <!-- Release DMG window background (dmg-settings.py: app at 170,200, Applications at 470,200; icons 128 pt).
+       Mid-tone on purpose: Finder draws icon labels black in light mode and white in dark mode, both must read. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7F95A1"/>
+      <stop offset="1" stop-color="#5F737E"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.45" r="0.6">
+      <stop offset="0" stop-color="#9FE9F5" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#9FE9F5" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bubble" cx="0.35" cy="0.3" r="0.75">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.55"/>
+      <stop offset="0.45" stop-color="#BDF1F8" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#5BD6E8" stop-opacity="0.10"/>
+    </radialGradient>
+    <marker id="head" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="4.2" markerHeight="4.2" orient="auto" markerUnits="strokeWidth">
+      <path d="M 1 1 L 9 5 L 1 9" fill="none" stroke="#FFFFFF" stroke-opacity="0.92" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <linearGradient id="arrow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="420" fill="url(#bg)"/>
+  <!-- soft light behind the two icon spots -->
+  <ellipse cx="170" cy="196" rx="120" ry="110" fill="url(#glow)"/>
+  <ellipse cx="470" cy="196" rx="120" ry="110" fill="url(#glow)"/>
+  <!-- bubbles, as on the app icon -->
+  <g stroke="#E6FAFD" stroke-opacity="0.35" stroke-width="1">
+    <circle cx="58" cy="62" r="26" fill="url(#bubble)"/>
+    <circle cx="104" cy="34" r="9" fill="url(#bubble)"/>
+    <circle cx="590" cy="352" r="34" fill="url(#bubble)"/>
+    <circle cx="548" cy="388" r="11" fill="url(#bubble)"/>
+    <circle cx="604" cy="58" r="14" fill="url(#bubble)"/>
+    <circle cx="36" cy="372" r="16" fill="url(#bubble)"/>
+    <circle cx="320" cy="92" r="6" fill="url(#bubble)"/>
+    <circle cx="300" cy="330" r="8" fill="url(#bubble)"/>
+  </g>
+  <!-- arrow from the app to Applications -->
+  <path d="M 254 204 C 292 174, 346 174, 378 198" fill="none" stroke="url(#arrow)" stroke-width="6" stroke-linecap="round" marker-end="url(#head)"/>
+</svg>

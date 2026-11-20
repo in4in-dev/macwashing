@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Only the keys Xcode does not generate (GENERATE_INFOPLIST_FILE merges them with its own). -->
+<plist version="1.0">
+<dict>
+	<!-- Without Full Disk Access, the first read of Desktop, Documents, Downloads or a removable or network volume
+	     (Large Files, Storage, the installers scan) makes macOS ask the user; these strings say why. Translations:
+	     App/Resources/InfoPlist.xcstrings. -->
+	<key>NSDesktopFolderUsageDescription</key>
+	<string>MacWashing ищет на Рабочем столе большие файлы и забытые установщики и показывает, сколько места они занимают. Удаляется только то, что вы выберете.</string>
+	<key>NSDocumentsFolderUsageDescription</key>
+	<string>MacWashing ищет в Документах большие файлы и показывает, сколько места они занимают. Удаляется только то, что вы выберете.</string>
+	<key>NSDownloadsFolderUsageDescription</key>
+	<string>MacWashing ищет в Загрузках большие файлы и забытые установщики и показывает, сколько места они занимают. Удаляется только то, что вы выберете.</string>
+	<key>NSRemovableVolumesUsageDescription</key>
+	<string>MacWashing ищет большие файлы на съёмных дисках, которые вы выбрали для проверки. Удаляется только то, что вы выберете.</string>
+	<key>NSNetworkVolumesUsageDescription</key>
+	<string>MacWashing ищет большие файлы на сетевых томах, которые вы выбрали для проверки. Удаляется только то, что вы выберете.</string>
+	<!-- The public repository, owner/name (MW_REPOSITORY in project.yml): the source link in Settings and the update
+	     feeds (App/Sources/Services/AppLinks.swift). -->
+	<key>MWRepository</key>
+	<string>$(MW_REPOSITORY)</string>
+	<!-- Ed25519 public keys that sign rules database manifests: base64 raw keys, comma-separated (MW_RULES_KEYS in debug).
+	     The private key is only on the maintainer's Mac (Tools/SignRules). Empty: rules updates are off. -->
+	<key>MWRulesKeys</key>
+	<string>VZWZjjvVz7dGdKD5igD5vljOE5/OqXUGqzXqkmCztCo=</string>
+	<key>LSUIElement</key>
+	<true/>
+	<!-- Sparkle. The feed URL comes from AppLinks.appcast (AppUpdates). SUPublicEDKey is the EdDSA key from Sparkle's
+	     generate_keys; empty: app updates are off. A fork that publishes its own builds puts its own keys here. -->
+	<key>SUPublicEDKey</key>
+	<string>4ZI3pmcgXcvQhaLLdDab+68F/jUFoJ7aN7+sIJwWLJw=</string>
+	<key>SUEnableSystemProfiling</key>
+	<false/>
+	<key>SUEnableAutomaticChecks</key>
+	<true/>
+	<key>SUAutomaticallyUpdate</key>
+	<false/>
+	<key>SUAllowsAutomaticUpdates</key>
+	<true/>
+	<key>SUScheduledCheckInterval</key>
+	<integer>86400</integer>
+</dict>
+</plist>

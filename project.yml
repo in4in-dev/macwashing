@@ -1,0 +1,157 @@
+name: MacWashing
+options:
+  bundleIdPrefix: com.ovvi
+  developmentLanguage: ru
+  deploymentTarget:
+    macOS: "14.0"
+  createIntermediateGroups: true
+  groupSortPosition: top
+
+settings:
+  base:
+    # The public repository (owner/name): the source link in Settings and the update feeds (App/Sources/Services/AppLinks.swift).
+    MW_REPOSITORY: in4in-dev/macwashing
+    # The maintainer's team. To build and sign your own copy, put your own team id here (or pass DEVELOPMENT_TEAM=…).
+    DEVELOPMENT_TEAM: PWS2N8K4JX
+    CODE_SIGN_STYLE: Automatic
+    CODE_SIGN_IDENTITY: "Apple Development"
+    SWIFT_VERSION: "6.0"
+    MACOSX_DEPLOYMENT_TARGET: "14.0"
+    ENABLE_HARDENED_RUNTIME: YES
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    SWIFT_EMIT_LOC_STRINGS: YES
+    LOCALIZATION_PREFERS_STRING_CATALOGS: YES
+    DEAD_CODE_STRIPPING: YES
+
+packages:
+  MacWashingKit:
+    path: Packages/MacWashingKit
+  # App updates. Pinned: its signing tools (sign_update, generate_keys) come from the same release
+  # (Scripts/release/publish-release.sh).
+  Sparkle:
+    url: https://github.com/sparkle-project/Sparkle
+    exactVersion: 2.10.0
+
+targets:
+  MacWashing:
+    type: application
+    platform: macOS
+    sources:
+      - path: App/Sources
+      - path: App/Resources
+      - path: Helper/com.ovvi.MacWashing.Helper.plist
+        buildPhase:
+          copyFiles:
+            destination: wrapper
+            subpath: Contents/Library/LaunchDaemons
+    dependencies:
+      - package: MacWashingKit
+        product: MacWashingKit
+      - package: MacWashingKit
+        product: MacWashingXPC
+      - package: MacWashingKit
+        product: FluidKit
+      - package: Sparkle
+        product: Sparkle
+      - target: MacWashingHelper
+        embed: true
+        codeSign: true
+        copy:
+          destination: executables
+    postBuildScripts:
+      # Debug only: plain HTTP to localhost and *.localhost, for update files served locally
+      # (MW_UPDATES_URL=http://updates.localhost:8000/). ATS lets plain HTTP through only to unqualified names
+      # (`localhost`) and IP addresses; `updates.localhost` needs an exception. Release keeps the default ATS policy.
+      - name: Allow plain HTTP to localhost (Debug)
+        script: |
+          set -e
+          touch "$DERIVED_FILE_DIR/local-http.stamp"
+          if [ "$CONFIGURATION" != "Debug" ]; then exit 0; fi
+          plist="$TARGET_BUILD_DIR/$INFOPLIST_PATH"
+          key=":NSAppTransportSecurity:NSExceptionDomains:localhost"
+          /usr/libexec/PlistBuddy -c "Delete :NSAppTransportSecurity" "$plist" 2>/dev/null || true
+          /usr/libexec/PlistBuddy -c "Add $key:NSIncludesSubdomains bool true" \
+            -c "Add $key:NSExceptionAllowsInsecureHTTPLoads bool true" "$plist"
+          # PlistBuddy exits 0 even when it cannot write: check the key landed.
+          /usr/libexec/PlistBuddy -c "Print $key:NSExceptionAllowsInsecureHTTPLoads" "$plist" >/dev/null
+        inputFiles:
+          - $(TARGET_BUILD_DIR)/$(INFOPLIST_PATH)
+        # The plist is edited in place; the stamp gives the task an output of its own.
+        outputFiles:
+          - $(TARGET_BUILD_DIR)/$(INFOPLIST_PATH)
+          - $(DERIVED_FILE_DIR)/local-http.stamp
+    settings:
+      configs:
+        Release:
+          # Strip the symbol table of every Release build, not only the DMG's (build-dmg.sh passes the same): a smaller
+          # binary. Reflection metadata stays on: SwiftUI finds @State/@Environment through it.
+          DEPLOYMENT_POSTPROCESSING: YES
+          STRIP_INSTALLED_PRODUCT: YES
+          STRIP_SWIFT_SYMBOLS: YES
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.ovvi.MacWashing
+        PRODUCT_NAME: MacWashing
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "15"
+        GENERATE_INFOPLIST_FILE: YES
+        # Merged into the generated Info.plist: MWRepository, MWRulesKeys, Sparkle's keys, the folder usage strings.
+        INFOPLIST_FILE: App/Info.plist
+        INFOPLIST_KEY_CFBundleDisplayName: MacWashing
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.utilities
+        INFOPLIST_KEY_NSHumanReadableCopyright: "© 2026 ovvi"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ENABLE_APP_SANDBOX: NO
+        COMBINE_HIDPI_IMAGES: YES
+
+  MacWashingHelper:
+    type: tool
+    platform: macOS
+    sources:
+      - path: Helper
+        excludes:
+          - "*.plist"
+    dependencies:
+      - package: MacWashingKit
+        product: MacWashingXPC
+    settings:
+      configs:
+        Release:
+          DEPLOYMENT_POSTPROCESSING: YES
+          STRIP_INSTALLED_PRODUCT: YES
+          STRIP_SWIFT_SYMBOLS: YES
+      base:
+        PRODUCT_NAME: com.ovvi.MacWashing.Helper
+        PRODUCT_BUNDLE_IDENTIFIER: com.ovvi.MacWashing.Helper
+        SKIP_INSTALL: YES
+        GENERATE_INFOPLIST_FILE: YES
+        CREATE_INFOPLIST_SECTION_IN_BINARY: YES
+        INFOPLIST_KEY_CFBundleDisplayName: MacWashing Helper
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "15"
+
+  # Drives the real app with XCUITest inside the MW_FAKE_HOME sandbox (see App/UITests/SandboxTree.swift).
+  MacWashingUITests:
+    type: bundle.ui-testing
+    platform: macOS
+    sources:
+      - path: App/UITests
+    dependencies:
+      - target: MacWashing
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.ovvi.MacWashingUITests
+        TEST_TARGET_NAME: MacWashing
+        GENERATE_INFOPLIST_FILE: YES
+
+schemes:
+  MacWashing:
+    build:
+      targets:
+        MacWashing: all
+        MacWashingUITests: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - MacWashingUITests

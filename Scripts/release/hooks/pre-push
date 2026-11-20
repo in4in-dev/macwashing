@@ -1,0 +1,16 @@
+#!/bin/bash
+# Optional reminder (installed by `Scripts/release/hooks/install.sh`): when the pushed main carries a rules database
+# newer than the published one (updates/rules/<level>/manifest.json), say so. Never blocks a push, never touches the
+# network.
+repo=$(git rev-parse --show-toplevel)
+level=$(sed -n 's/^ *public static let level = \([0-9]*\)$/\1/p' "$repo/Packages/MacWashingKit/Sources/MacWashingKit/Database/Database.swift")
+local_version=$(sqlite3 "$repo/App/Resources/database.sqlite" "SELECT value FROM info WHERE key = 'version'" 2>/dev/null)
+published=$(sed -n 's/.*"version": *"\([^"]*\)".*/\1/p' "$repo/updates/rules/$level/manifest.json" 2>/dev/null)
+if [[ -n $local_version && $local_version != "$published" ]]; then
+    newest=$(printf '%s\n%s\n' "$published" "$local_version" | sort -t. -k1,1n -k2,2n -k3,3n -k4,4n -k5,5n -k6,6n | tail -n 1)
+    if [[ $newest == "$local_version" ]]; then
+        printf '\033[33mnote:\033[0m rules database %s is not published (published: %s). When it is reviewed: Scripts/release/publish-rules.sh\n' \
+            "$local_version" "${published:-none}" >&2
+    fi
+fi
+exit 0

@@ -1,0 +1,2 @@
+# DMG layout for build-dmg.sh (installed into build/release/dmgbuild-venv on first use).
+dmgbuild==1.6.7

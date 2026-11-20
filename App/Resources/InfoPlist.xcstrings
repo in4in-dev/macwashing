@@ -1,0 +1,396 @@
+{
+  "sourceLanguage" : "ru",
+  "strings" : {
+    "NSDesktopFolderUsageDescription" : {
+      "comment" : "Privacy - Desktop Folder Usage Description",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing sucht auf dem Schreibtisch nach großen Dateien und vergessenen Installationsprogrammen und zeigt, wie viel Platz sie belegen. Entfernt wird nur, was du auswählst."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing looks for large files and forgotten installers on your Desktop and shows how much space they take. Only what you choose is removed."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing busca en el Escritorio archivos grandes e instaladores olvidados y muestra cuánto espacio ocupan. Solo se elimina lo que tú elijas."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing recherche sur le Bureau les fichiers volumineux et les installateurs oubliés, et indique l’espace qu’ils occupent. Seul ce que vous choisissez est supprimé."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing cerca sulla Scrivania file di grandi dimensioni e installer dimenticati e mostra quanto spazio occupano. Viene rimosso solo ciò che scegli."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing はデスクトップにある大きなファイルや不要になったインストーラを探し、使用している容量を表示します。削除されるのは選択した項目だけです。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing은 데스크탑에서 큰 파일과 잊힌 설치 프로그램을 찾아 차지하는 공간을 보여 줍니다. 선택한 항목만 제거됩니다."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing szuka na Biurku dużych plików i zapomnianych instalatorów oraz pokazuje, ile miejsca zajmują. Usuwane jest tylko to, co wybierzesz."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O MacWashing procura na Mesa arquivos grandes e instaladores esquecidos e mostra quanto espaço eles ocupam. Só é removido o que você escolher."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing ищет на Рабочем столе большие файлы и забытые установщики и показывает, сколько места они занимают. Удаляется только то, что вы выберете."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing, Masaüstü’ndeki büyük dosyaları ve unutulmuş yükleyicileri bulur ve ne kadar yer kapladıklarını gösterir. Yalnızca seçtikleriniz kaldırılır."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing 会在桌面上查找大文件和遗忘的安装包，并显示它们占用的空间。只会移除你选择的项目。"
+          }
+        }
+      }
+    },
+    "NSDocumentsFolderUsageDescription" : {
+      "comment" : "Privacy - Documents Folder Usage Description",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing sucht im Ordner „Dokumente“ nach großen Dateien und zeigt, wie viel Platz sie belegen. Entfernt wird nur, was du auswählst."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing looks for large files in your Documents folder and shows how much space they take. Only what you choose is removed."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing busca archivos grandes en la carpeta Documentos y muestra cuánto espacio ocupan. Solo se elimina lo que tú elijas."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing recherche les fichiers volumineux dans le dossier Documents et indique l’espace qu’ils occupent. Seul ce que vous choisissez est supprimé."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing cerca file di grandi dimensioni nella cartella Documenti e mostra quanto spazio occupano. Viene rimosso solo ciò che scegli."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing は書類フォルダにある大きなファイルを探し、使用している容量を表示します。削除されるのは選択した項目だけです。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing은 문서 폴더에서 큰 파일을 찾아 차지하는 공간을 보여 줍니다. 선택한 항목만 제거됩니다."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing szuka dużych plików w folderze Dokumenty i pokazuje, ile miejsca zajmują. Usuwane jest tylko to, co wybierzesz."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O MacWashing procura arquivos grandes na pasta Documentos e mostra quanto espaço eles ocupam. Só é removido o que você escolher."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing ищет в Документах большие файлы и показывает, сколько места они занимают. Удаляется только то, что вы выберете."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing, Belgeler klasöründeki büyük dosyaları bulur ve ne kadar yer kapladıklarını gösterir. Yalnızca seçtikleriniz kaldırılır."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing 会在“文稿”文件夹中查找大文件，并显示它们占用的空间。只会移除你选择的项目。"
+          }
+        }
+      }
+    },
+    "NSDownloadsFolderUsageDescription" : {
+      "comment" : "Privacy - Downloads Folder Usage Description",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing sucht im Ordner „Downloads“ nach großen Dateien und vergessenen Installationsprogrammen und zeigt, wie viel Platz sie belegen. Entfernt wird nur, was du auswählst."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing looks for large files and forgotten installers in your Downloads folder and shows how much space they take. Only what you choose is removed."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing busca en la carpeta Descargas archivos grandes e instaladores olvidados y muestra cuánto espacio ocupan. Solo se elimina lo que tú elijas."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing recherche dans le dossier Téléchargements les fichiers volumineux et les installateurs oubliés, et indique l’espace qu’ils occupent. Seul ce que vous choisissez est supprimé."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing cerca nella cartella Download file di grandi dimensioni e installer dimenticati e mostra quanto spazio occupano. Viene rimosso solo ciò che scegli."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing はダウンロードフォルダにある大きなファイルや不要になったインストーラを探し、使用している容量を表示します。削除されるのは選択した項目だけです。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing은 다운로드 폴더에서 큰 파일과 잊힌 설치 프로그램을 찾아 차지하는 공간을 보여 줍니다. 선택한 항목만 제거됩니다."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing szuka w folderze Pobrane dużych plików i zapomnianych instalatorów oraz pokazuje, ile miejsca zajmują. Usuwane jest tylko to, co wybierzesz."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O MacWashing procura na pasta Transferências arquivos grandes e instaladores esquecidos e mostra quanto espaço eles ocupam. Só é removido o que você escolher."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing ищет в Загрузках большие файлы и забытые установщики и показывает, сколько места они занимают. Удаляется только то, что вы выберете."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing, İndirilenler klasöründeki büyük dosyaları ve unutulmuş yükleyicileri bulur ve ne kadar yer kapladıklarını gösterir. Yalnızca seçtikleriniz kaldırılır."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing 会在“下载”文件夹中查找大文件和遗忘的安装包，并显示它们占用的空间。只会移除你选择的项目。"
+          }
+        }
+      }
+    },
+    "NSNetworkVolumesUsageDescription" : {
+      "comment" : "Privacy - Network Volumes Usage Description",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing sucht auf den Netzwerkvolumes, die du zum Prüfen auswählst, nach großen Dateien. Entfernt wird nur, was du auswählst."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing looks for large files on the network volumes you choose to scan. Only what you choose is removed."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing busca archivos grandes en los volúmenes de red que elijas analizar. Solo se elimina lo que tú elijas."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing recherche les fichiers volumineux sur les volumes réseau que vous choisissez d’analyser. Seul ce que vous choisissez est supprimé."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing cerca file di grandi dimensioni sui volumi di rete che scegli di analizzare. Viene rimosso solo ciò che scegli."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing はスキャン対象に選んだネットワークボリュームで大きなファイルを探します。削除されるのは選択した項目だけです。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing은 검사하도록 선택한 네트워크 볼륨에서 큰 파일을 찾습니다. 선택한 항목만 제거됩니다."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing szuka dużych plików na woluminach sieciowych wybranych do sprawdzenia. Usuwane jest tylko to, co wybierzesz."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O MacWashing procura arquivos grandes nos volumes de rede que você escolher verificar. Só é removido o que você escolher."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing ищет большие файлы на сетевых томах, которые вы выбрали для проверки. Удаляется только то, что вы выберете."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing, taramak için seçtiğiniz ağ birimlerinde büyük dosyaları bulur. Yalnızca seçtikleriniz kaldırılır."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing 会在你选择扫描的网络宗卷上查找大文件。只会移除你选择的项目。"
+          }
+        }
+      }
+    },
+    "NSRemovableVolumesUsageDescription" : {
+      "comment" : "Privacy - Removable Volumes Usage Description",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing sucht auf den Wechseldatenträgern, die du zum Prüfen auswählst, nach großen Dateien. Entfernt wird nur, was du auswählst."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing looks for large files on the removable disks you choose to scan. Only what you choose is removed."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing busca archivos grandes en los discos extraíbles que elijas analizar. Solo se elimina lo que tú elijas."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing recherche les fichiers volumineux sur les disques amovibles que vous choisissez d’analyser. Seul ce que vous choisissez est supprimé."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing cerca file di grandi dimensioni sui dischi rimovibili che scegli di analizzare. Viene rimosso solo ciò che scegli."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing はスキャン対象に選んだリムーバブルディスクで大きなファイルを探します。削除されるのは選択した項目だけです。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing은 검사하도록 선택한 이동식 디스크에서 큰 파일을 찾습니다. 선택한 항목만 제거됩니다."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing szuka dużych plików na dyskach wymiennych wybranych do sprawdzenia. Usuwane jest tylko to, co wybierzesz."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O MacWashing procura arquivos grandes nos discos removíveis que você escolher verificar. Só é removido o que você escolher."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing ищет большие файлы на съёмных дисках, которые вы выбрали для проверки. Удаляется только то, что вы выберете."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing, taramak için seçtiğiniz çıkarılabilir disklerde büyük dosyaları bulur. Yalnızca seçtikleriniz kaldırılır."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MacWashing 会在你选择扫描的可移除磁盘上查找大文件。只会移除你选择的项目。"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
