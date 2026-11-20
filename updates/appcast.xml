@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by Scripts/release/publish-release.sh (notes.py appcast); do not edit by hand. -->
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>MacWashing</title>
+    <link>https://github.com/in4in-dev/macwashing</link>
+    <item>
+      <title>1.0</title>
+      <pubDate>Fri, 20 Nov 2026 21:27:17 +0000</pubDate>
+      <sparkle:version>15</sparkle:version>
+      <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description xml:lang="en"><![CDATA[<p>MacWashing is now free and open source.</p><ul><li>The code is on GitHub under GPL-3.0; app and rules database updates come from there</li></ul>]]></description>
+      <description xml:lang="ru"><![CDATA[<p>MacWashing теперь бесплатный и с открытым кодом.</p><ul><li>Код открыт на GitHub под лицензией GPL-3.0; обновления программы и базы правил приходят оттуда</li></ul>]]></description>
+      <enclosure url="https://github.com/in4in-dev/macwashing/releases/download/v1.0/MacWashing-1.0.dmg" length="8800142" type="application/octet-stream"
+                 sparkle:edSignature="k22OrUjzrjtCrMkTPK1NrwtD0OLjLE5yqUGeBK77Go+j4OTycURzryECXpnf9wffolOu4a1ojqCHfCyCBP1UAg=="/>
+    </item>
+  </channel>
+</rss>

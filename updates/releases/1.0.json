@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "build": 15,
+  "size": 8800142,
+  "sha256": "46dbfd2c1be34996a9359774910cf3694f4f2b1e77dbb9553578db16547c365e",
+  "ed_signature": "k22OrUjzrjtCrMkTPK1NrwtD0OLjLE5yqUGeBK77Go+j4OTycURzryECXpnf9wffolOu4a1ojqCHfCyCBP1UAg==",
+  "min_system": "14.0",
+  "date": "Fri, 20 Nov 2026 21:27:17 +0000",
+  "notes": {
+    "en": "MacWashing is now free and open source.\n\n- The code is on GitHub under GPL-3.0; app and rules database updates come from there",
+    "ru": "MacWashing теперь бесплатный и с открытым кодом.\n\n- Код открыт на GitHub под лицензией GPL-3.0; обновления программы и базы правил приходят оттуда"
+  },
+  "source_commit": "159350925e4f6fa2b34ae781dea0f96b55fe66f5",
+  "file": "MacWashing-1.0.dmg"
+}
