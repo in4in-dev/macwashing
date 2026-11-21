@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MacWashing — a careful Mac cleaner and uninstaller, free and open source</title>
+<meta name="description" content="MacWashing clears cache and junk, uninstalls apps completely, finds large files and shows what takes up space on your Mac. Free and open source.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0b0c10">
+<meta property="og:title" content="MacWashing — a careful Mac cleaner and uninstaller, free and open source">
+<meta property="og:description" content="MacWashing clears cache and junk, uninstalls apps completely, finds large files and shows what takes up space on your Mac. Free and open source.">
+<meta property="og:type" content="website">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="img/fav-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="img/icon-256.png">
+<link rel="alternate" hreflang="en" href="./">
+<link rel="alternate" hreflang="ru" href="ru/">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="img/icon-256.png" alt="" width="28" height="28">MacWashing</a>
+    <nav>
+      <a class="hide-sm" href="#junk">Features</a>
+      <a class="hide-sm" href="#rules">Rules database</a>
+      <a class="hide-sm" href="#safety">Safety</a>
+      <a class="hide-sm" href="#faq">FAQ</a>
+      <a href="https://github.com/in4in-dev/macwashing">GitHub</a>
+      <a class="lang" href="ru/" hreflang="ru">Русский</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <img class="icon" src="img/icon-400.webp" width="148" height="148" alt="">
+      <h1><span>Give your Mac a deep clean</span><span class="grad">Free and open source</span></h1>
+      <p class="lead">MacWashing keeps your Mac healthy and brings back its youth: it clears cache and junk, helps you find large files and free up disk space. Taking care of your Mac is what MacWashing is here for.</p>
+      <div class="cta">
+        <a class="btn primary" href="https://github.com/in4in-dev/macwashing/releases/latest/download/MacWashing.dmg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14"/></svg>Download for Mac</a>
+        <a class="btn" href="https://github.com/in4in-dev/macwashing"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>View on GitHub</a>
+      </div>
+      <p class="meta">Version <b>1.0</b> · macOS 14 Sonoma or later · GPL-3.0 · no account, no limits</p>
+      <div class="window"><picture><source type="image/webp" srcset="img/en/junk-caches-1200.webp"><img src="img/en/junk-caches-800.jpg" width="1200" height="785" alt="MacWashing, System Junk: app caches of Spotify, Telegram, Chrome and other apps found, 72.84 GB ready to be cleaned" fetchpriority="high" decoding="async"></picture></div>
+      <div class="stats"><div class="stat"><b>6,300+</b><span>cleaning rules</span></div><div class="stat"><b>930+</b><span>apps in the rules database</span></div><div class="stat"><b>5</b><span>tools in one window</span></div><div class="stat"><b>12</b><span>interface languages</span></div></div>
+    </div>
+  </div>
+
+  <section class="tone-junk" id="junk">
+    <div class="wrap">
+      <div class="center">
+        <div class="kicker">System Junk</div>
+        <h2>Clear cache, logs and leftovers on your Mac</h2>
+        <p class="text">Finds everything that can go without harming your system, including much of System Data: user and system caches, app logs, leftovers of apps you removed long ago, forgotten installers and gigabytes of Xcode junk.</p>
+      </div>
+      <div class="bento"><div class="cell wide"><h3>User Cache</h3><p>App caches grow to tens of gigabytes.</p></div><div class="cell"><h3>Xcode Junk</h3><p>Xcode DerivedData, debugging data for old iOS versions and simulator caches.</p></div><div class="cell"><h3>Editor Junk</h3><p>Caches of Final Cut Pro, Premiere Pro, Lightroom and more.</p></div><div class="cell"><h3>Installers</h3><p>Disk images and packages forgotten in Downloads.</p></div><div class="cell"><h3>App Leftovers</h3><p>Settings and caches of apps that are no longer on your Mac.</p></div><div class="cell"><h3>Logs</h3><p>From apps and the system: nothing needs them to work.</p></div><div class="cell"><h3>Old Project Leftovers</h3><p>node_modules, Pods, .venv and other dependencies in projects you haven’t opened for over 90 days.</p></div></div>
+      <ul class="points" style="max-width:760px;margin:28px auto 0"><li>Xcode DerivedData, old iOS DeviceSupport files and simulators Xcode no longer uses</li><li>Caches of browsers and apps: Chrome, Edge, Brave, Opera, Slack, Discord, Notion, Figma, VS Code, Cursor, ChatGPT, Claude, Obsidian, Dropbox and more</li><li>Broken preference files and login items of deleted apps</li><li>Expand any category and uncheck whatever you want to keep</li></ul>
+      <div class="strip">
+        <div class="kicker">For photographers and videographers</div>
+        <h2>Get your space back after editing and shooting</h2>
+        <p class="text">The Final Cut Pro and Premiere Pro cache, Lightroom previews and the DaVinci Resolve cache take tens of gigabytes on an active project. Your photos, videos and projects stay where they are.</p>
+        <p class="names">Final Cut Pro · Premiere Pro · Lightroom Classic · DaVinci Resolve · iMovie</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="tone-uninstaller" id="uninstaller">
+    <div class="wrap side flip">
+      <div class="copy">
+        <div class="kicker">Uninstaller</div>
+        <h2>Uninstall apps on Mac completely</h2>
+        <p class="text">Dragging an app to the Trash doesn’t uninstall it completely: its settings, caches and background items stay behind. The Uninstaller finds them and removes everything together.</p>
+        <ul class="points"><li>Sort by size, name or last launch, and “Select Unused” picks the apps you haven’t opened in ages</li><li>Remove several apps at once, or just individual folders inside one</li><li>Removes apps installed with Homebrew and command-line tools too</li><li>A component shared by several apps goes only together with all of them</li></ul>
+        
+        
+      </div>
+      <div class="shot"><picture><source type="image/webp" srcset="img/en/uninstaller-results-1200.webp"><img src="img/en/uninstaller-results-800.jpg" width="1200" height="785" alt="Uninstaller: a list of apps sorted by size with when each was last opened, Google Chrome selected with its app and cache sizes" loading="lazy" decoding="async"></picture></div>
+    </div>
+  </section>
+
+  <section class="tone-large" id="large">
+    <div class="wrap side">
+      <div class="copy">
+        <div class="kicker">Large Files</div>
+        <h2>Find large files you forgot about</h2>
+        <p class="text">Videos, archives and disk images you downloaded once and never opened again. MacWashing helps you find large, long-forgotten files on the disks you choose, and then you decide their fate.</p>
+        <ul class="points"><li>Search whole disks or only the folders you pick</li><li>Finds even what’s tucked away</li><li>You decide what to do with what it finds</li></ul>
+        
+        
+      </div>
+      <div class="shot"><picture><source type="image/webp" srcset="img/en/large-results-1200.webp"><img src="img/en/large-results-800.jpg" width="1200" height="785" alt="Large Files: files grouped by type, size and last opened date, with videos, Xcode and Linux images at the top" loading="lazy" decoding="async"></picture></div>
+    </div>
+  </section>
+
+  <section class="tone-disk" id="disk">
+    <div class="wrap side flip">
+      <div class="copy">
+        <div class="kicker">Storage</div>
+        <h2>See what’s taking up space on your Mac</h2>
+        <p class="text">A Finder-style browser that shows the real size of every folder. Walk through your home folder, iCloud Drive, the Trash and every disk, and clear out what you no longer need.</p>
+        <ul class="points"><li>Helps you find what’s really taking up space on your disk</li><li>Then free up space in one click</li><li>Made a mistake? Just put the file back from the Trash</li></ul>
+        
+        
+      </div>
+      <div class="shot"><picture><source type="image/webp" srcset="img/en/disk-1200.webp"><img src="img/en/disk-800.jpg" width="1200" height="785" alt="Storage: the home folder with the size of every folder, Library and Applications being the largest" loading="lazy" decoding="async"></picture></div>
+    </div>
+  </section>
+
+  <section class="tone-privacy" id="privacy">
+    <div class="wrap side">
+      <div class="copy">
+        <div class="kicker">Privacy</div>
+        <h2>Who can use your camera, screen and files</h2>
+        <p class="text">Shows which apps you let use the camera, microphone, screen recording, files, automation and every other macOS permission — and takes access back from the ones that don’t need it.</p>
+        
+        <div class="chips"><span class="chip">Camera</span><span class="chip">Microphone</span><span class="chip">Screen Recording</span><span class="chip">Full Disk Access</span><span class="chip">Automation</span><span class="chip">Accessibility</span><span class="chip">Input Monitoring</span><span class="chip">Files &amp; Folders</span><span class="chip">Contacts</span><span class="chip">Calendars</span><span class="chip">Photos</span></div>
+        
+      </div>
+      <div class="shot"><picture><source type="image/webp" srcset="img/en/privacy-1200.webp"><img src="img/en/privacy-800.jpg" width="1200" height="785" alt="Privacy: permission categories with the number of apps in each, Camera selected with five apps and a Revoke button for each" loading="lazy" decoding="async"></picture></div>
+    </div>
+  </section>
+
+  <section class="tone-uninstaller" id="more">
+    <div class="wrap">
+      <div class="center">
+        <div class="kicker">And a few more things</div>
+        <h2>You’ll ask — MacWashing already does it</h2>
+      </div>
+      <div class="chat"><div class="q">When I delete a messenger, can I wipe the chat history and accounts too?</div><div class="a">Yes. The Uninstaller lists <b>chats and accounts</b> as separate items: check the ones you want gone and they go with the app. Leave them unchecked and they stay, in case you install the messenger again.</div><div class="q">Why not just drag the app to the Trash?</div><div class="a">That takes only the app itself. MacWashing <b>cleans deeper</b>: its caches, settings, logs and background items go too, even from folders shared by everyone on the Mac.</div><div class="q">What if there’s something I need among the junk?</div><div class="a">It all goes <b>by your rules</b>. You can review every find and uncheck it, send removed files to the Trash, keep confirmation on and add your work folders to Exclusions — no scan ever looks inside.</div><div class="q">Do I have to clean it myself every time? Is there auto-clean?</div><div class="a">There is <b>auto-clean</b>, you turn it on in Settings. Once it is on, daily, weekly or monthly MacWashing removes the same junk in the background and sends a notification. Apps you have open are skipped.</div></div>
+    </div>
+  </section>
+
+  <section class="tone-junk" id="rules">
+    <div class="wrap">
+      <div class="center">
+        <div class="kicker">The rules database</div>
+        <h2>Every rule is checked on a real Mac</h2>
+        <p class="text">Checking more than 930 apps took a lot of work. For each one we mapped the folders it works in, checked every one of them and decided what counts as junk. The database is open: read it, check it, suggest new rules.</p>
+      </div>
+      <div class="db">
+        <div>
+          <div class="nums"><div class="stat"><b>6,370</b><span>cleaning rules</span></div><div class="stat"><b>938</b><span>apps</span></div><div class="stat"><b>2.6.14</b><span>current database</span></div></div>
+          <ul class="points"><li>MacWashing downloads a fresh database on its own, between app updates</li><li>We keep an eye on new versions and new apps</li></ul>
+        </div>
+        <a class="wall" href="apps/">
+          <ul><li title="Parallels Desktop"><img src="img/apps/com.parallels.desktop.console.webp" width="56" height="56" alt="" loading="lazy" decoding="async"></li><li title="Dropbox"><img src="img/apps/com.getdropbox.dropbox.webp" width="56" height="56" alt="" loading="lazy" decoding="async"></li><li title="Microsoft Teams"><img src="img/apps/com.microsoft.teams2.webp" width="56" height="56" alt="" loading="lazy" decoding="async"></li><li title="OneDrive"><img src="img/apps/com.microsoft.OneDrive.webp" width="56" height="56" alt="" loading="lazy" decoding="async"></li><li title="iStat Menus"><img src="img/apps/com.bjango.istatmenus.webp" width="56" height="56" alt="" loading="lazy" decoding="async"></li><li title="zoom.us"><img src="img/apps/us.zoom.xos.webp" width="56" height="56" alt="" loading="lazy" decoding="async"></li><li title="TeamViewer"><img src="img/apps/com.teamviewer.TeamViewer.webp" width="56" height="56" alt="" loading="lazy" decoding="async"></li><li title="Docker"><img src="img/apps/com.docker.docker.webp" width="56" height="56" alt="" loading="lazy" decoding="async"></li><li title="Acronis True Image"><img src="img/apps/com.acronis.CyberProtectHomeOffice.webp" width="56" height="56" alt="" loading="lazy" decoding="async"></li><li title="Microsoft Excel"><img src="img/apps/com.microsoft.Excel.webp" width="56" height="56" alt="" loading="lazy" decoding="async"></li><li title="Microsoft Word"><img src="img/apps/com.microsoft.Word.webp" width="56" height="56" alt="" loading="lazy" decoding="async"></li><li title="Microsoft PowerPoint"><img src="img/apps/com.microsoft.Powerpoint.webp" width="56" height="56" alt="" loading="lazy" decoding="async"></li><li title="1Password"><img src="img/apps/com.1password.1password.webp" width="56" height="56" alt="" loading="lazy" decoding="async"></li><li title="Adobe Bridge CS4"><img src="img/apps/com.adobe.bridge3.webp" width="56" height="56" alt="" loading="lazy" decoding="async"></li><li title="Google Chrome"><img src="img/apps/com.google.Chrome.webp" width="56" height="56" alt="" loading="lazy" decoding="async"></li><li title="Little Snitch"><img src="img/apps/at.obdev.LittleSnitchConfiguration.webp" width="56" height="56" alt="" loading="lazy" decoding="async"></li><li title="Microsoft Edge"><img src="img/apps/com.microsoft.edgemac.webp" width="56" height="56" alt="" loading="lazy" decoding="async"></li><li title="Todoist"><img src="img/apps/com.todoist.mac.Todoist.webp" width="56" height="56" alt="" loading="lazy" decoding="async"></li><li title="ChatGPT"><img src="img/apps/com.openai.codex.webp" width="56" height="56" alt="" loading="lazy" decoding="async"></li><li title="Google Drive"><img src="img/apps/com.google.drivefs.webp" width="56" height="56" alt="" loading="lazy" decoding="async"></li><li title="Microsoft Outlook"><img src="img/apps/com.microsoft.Outlook.webp" width="56" height="56" alt="" loading="lazy" decoding="async"></li></ul>
+          <span>See all 938 apps →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="tone-disk" id="safety">
+    <div class="wrap">
+      <div class="center">
+        <div class="kicker">Safe by design</div>
+        <h2>Built never to delete the wrong thing</h2>
+        <p class="text">MacWashing removes only what it can explain: every file is matched to a known app or a known kind of junk.</p>
+      </div>
+      <div class="cards"><div class="card"><h3>A curated rules database</h3><p>We build the database by watching how apps really behave.</p></div><div class="card"><h3>Only known-safe places</h3><p>We don’t touch what may matter to you. Only what we’re sure about.</p></div><div class="card"><h3>You see what goes</h3><p>Open any find and look it over before it’s removed.</p></div><div class="card"><h3>The Trash if you want it</h3><p>Turn on removal to the Trash and leave your worries behind.</p></div><div class="card"><h3>Running apps are respected</h3><p>Waits until you finish your work.</p></div><div class="card"><h3>It all stays on your Mac</h3><p>Scanning works without the internet, and your data stays with you.</p></div></div>
+    </div>
+  </section>
+
+  <section class="tone-junk" id="faq">
+    <div class="wrap">
+      <div class="center">
+        <div class="kicker">FAQ</div>
+        <h2>Questions and answers</h2>
+      </div>
+      <div class="faq"><details><summary>Is MacWashing really free?</summary><p>Yes. Every section works without limits, and there is no account. The code is open under GPL-3.0: anyone can read it, build it and suggest changes on GitHub.</p></details><details><summary>Is it safe to clean with MacWashing?</summary><p>MacWashing removes only files it can match to a known app or a known kind of junk in its rules database, and only in places apps leave files. Standard system folders and Apple’s files are never touched. You can review and uncheck every item.</p></details><details><summary>Why does it ask for Full Disk Access?</summary><p>macOS hides caches, logs and the permissions database from apps without Full Disk Access. MacWashing needs it to see them. Everything is scanned on your Mac. No file names or lists are sent anywhere.</p></details><details><summary>Can I get deleted files back?</summary><p>By default MacWashing deletes right away, so the space is freed at once. If you want to be able to change your mind, choose To Trash in Settings ▸ Removal: then anything removed can be put back until you empty the Trash.</p></details><details><summary>Which Macs are supported?</summary><p>Any Mac running macOS 14 Sonoma or later, with Apple silicon or Intel.</p></details><details><summary>How do I uninstall an app on a Mac completely?</summary><p>Moving an app to the Trash removes only the app itself. Its settings, caches and background items stay in your Library folder, take up space and sometimes keep launching. In MacWashing, open the Uninstaller and check the app: everything it left is found through the rules database and removed together with it.</p></details><details><summary>What is System Data on a Mac, and can MacWashing reduce it?</summary><p>System Data in Storage settings is everything macOS doesn’t sort into its other categories: caches, logs, Xcode data, Time Machine local snapshots and more. MacWashing removes the caches, logs and Xcode junk. Snapshots and macOS’s own files are left alone, so the number goes down, but not to zero.</p></details><details><summary>Why is my Mac running slow, and can cleaning speed it up?</summary><p>Most often a Mac slows down when its startup disk is nearly full: macOS has no room left for swap files and caches. Clearing caches, logs, Xcode junk and forgotten installers gives the space back. If there is plenty of free space and the Mac is still slow, the cause is more likely the processor or memory load — MacWashing doesn’t fix that.</p></details><details><summary>How do updates work?</summary><p>The app checks GitHub once a day: new versions come from this repository’s releases, signed and notarized, and a newer rules database from its updates folder. Both are signed, and the app checks the signatures before using anything.</p></details></div>
+      <div class="final">
+        <h2>Ready for a cleaner Mac?</h2>
+        <p class="text">Download MacWashing — it’s free.</p>
+        <div class="cta">
+          <a class="btn primary" href="https://github.com/in4in-dev/macwashing/releases/latest/download/MacWashing.dmg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14"/></svg>Download for Mac</a>
+          <a class="btn" href="https://github.com/in4in-dev/macwashing"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>View on GitHub</a>
+        </div>
+        <p class="meta">Version <b>1.0</b> · macOS 14 Sonoma or later · GPL-3.0 · no account, no limits</p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <span>MacWashing · Free and open source under GPL-3.0</span>
+    <span>
+      <a href="https://github.com/in4in-dev/macwashing">Source code</a> ·
+      <a href="https://github.com/in4in-dev/macwashing/blob/main/CHANGELOG.md">Changelog</a> ·
+      <a href="apps/">Apps in the database</a> ·
+      <a href="https://github.com/in4in-dev/macwashing/issues">Report a problem</a>
+    </span>
+  </div>
+</footer>
+</body>
+</html>
