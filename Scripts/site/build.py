@@ -5,7 +5,8 @@
 
 The texts are below; the numbers come from the repository itself: the app version from project.yml, the rules and
 apps counts, the database version and the list of apps from App/Resources/database.sqlite (rounded down: 6370 → 6,300+).
-Icons of the apps are site/img/apps/<bundle id>.webp (a letter tile when there is none). Run it after changing any of
+Icons of the apps are site/img/apps/<bundle id>.webp; the apps in Scripts/site/service-apps.txt (helpers, uninstallers)
+without one get the Terminal icon, any other app a letter tile. Run it after changing any of
 them and commit site/. The pages are plain HTML and CSS (site/style.css); the apps page has a few lines of script for
 its search box. .github/workflows/pages.yml publishes the folder.
 """
@@ -67,10 +68,14 @@ def load_apps():
 
 
 ALL_APPS = load_apps()
+SERVICE = {line.strip().casefold() for line in (ROOT / "Scripts" / "site" / "service-apps.txt").read_text().splitlines()
+           if line.strip() and not line.startswith("#")}
 TONES = ["junk", "large", "uninstaller", "disk", "privacy"]
 
 
 def tile_icon(prefix, name, bundle_id, icon, size):
+    if not icon and name.strip().casefold() in SERVICE:
+        icon = "_terminal.webp"   # helpers and small tools without an icon of their own
     if icon:
         return f'<img src="{prefix}img/apps/{icon}" width="{size}" height="{size}" alt="" loading="lazy" decoding="async">'
     tone = TONES[sum(map(ord, bundle_id)) % len(TONES)]

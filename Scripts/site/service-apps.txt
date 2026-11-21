@@ -1,0 +1,173 @@
+# Apps of the rules database shown with the Terminal icon on the apps page (site/apps/): helpers, notifiers,
+# uninstallers and other small tools without an icon of their own. One name per line, as in the database.
+
+AAM Registration Notifier
+AAM Updates Notifier
+AASIapp
+ACCFinderBundleLoader_32
+ACCFinderBundleLoader_64
+Adobe CEF Helper
+adobe_licutil
+Alarm
+Alerts Daemon
+AnyTrans Installer
+Appswell
+Archive
+Aspect
+Bento4
+Block Camera
+BookFab
+Boom
+Capture Area
+Capture Screen
+Capture Window
+CD Spin Doctor
+Cert Manager
+Chart Converter
+Cleaner
+Clip Gallery
+Combo Cleaner
+Communicator
+Contactizer
+Controller Editor
+Convert Video
+Creative Cloud Installer
+CreativeCloud(URIHandler)
+Database Daemon
+Database Utility
+Date Countdown
+Dazzle
+DigiTest
+Digitizer
+Do Not Disturb
+Do Not Sleep
+Document Connection
+Download Video
+Drop2Read
+Eject Volumes
+EOS Utility
+Epson Scan 2 Utility
+Equation Editor
+Fax Journal
+Fax Queue Creator
+Flash
+Flavours
+GadgetTrak
+Gerber2
+Graph
+Hide Desktop
+HP Setup Assistant
+HP Uninstaller
+iBizClient
+idaq
+iMobie Installer
+iMyFone D-Back Installer
+Install Setapp
+Interface Inspector
+iRatchet
+iTubeX
+Jazz
+Job Manager
+Job Node
+JustCloud
+Kiwi
+Language Register
+Launch
+Lock Screen
+Log Leech
+Logitech Connection Utility
+LogTransport2
+Mac Tubes
+Mac2TiVo
+MAMP PRO Uninstaller
+Microsoft Alerts Daemon
+Microsoft Database Utility
+Microsoft Query
+Microsoft Sync
+Minuteur
+MUMenu
+MusicManager
+Mute Microphone
+My Day
+My Living Desktop
+Office Reminders
+Office Setup Assistant
+Organization Chart
+Pagico Helper
+PastebotSync
+PCB-ST
+PfuSsWifiTool
+Plus Converter
+Pro Tools Loader
+Pro Tools Registration
+Pro Tools Software Updater
+Pro Tools Uninstaller
+Project Gallery
+QuadroSync
+Readiris
+Record Area
+Record Audio
+Record Screen
+Record Window
+Remove Office
+Reset Search
+Saling Clicker
+Scan to E-mail
+Scan to Folder
+Scan to Print
+Scan2Mobile
+ScanSnapUnInstaller
+ScanToMobileTrans
+Schematics+
+SearchablePDFConverter
+Serial Seeker
+ServiceCenter
+Setup
+Setup Assistant
+Shiny Soap
+Smart Reporter
+SocialBox
+Solver
+Songbird
+SoundTouch
+SoundTouchL
+Speed Download Uninstaller
+Spin Doctor
+SSLog
+SSMagAdjust
+Stopwatch
+Streamer
+SupportTool
+SyncServicesAgent
+SystemLogTool
+Take Photo
+Take Video
+Tako HTML Edit
+TeamViewer Uninstall
+TestNav
+TiVo Transfer
+UI Browser
+Unarchive
+uninstall
+Uninstall AWS VPN Client
+Uninstall Genieo
+Uninstall OpenVPN Connect
+Uninstall Product
+Upload Center
+Videobox
+ViseX
+WallWiz
+WallWiz Lite
+Web Snapper
+WebSync
+WFT-E1/E1A Utility
+WFT-E2/E2A Utility
+WFT-E2IIA/E2IIB/E2IIC/E2IID Utility
+WFT-E3/E3A Utility
+WFT-E4/E4A Utility
+WFT-E4IIA/E4IIB/E4IIC/E4IID Utility
+WFT-E5A/E5B/E5C/E5D Utility
+WFTPairing
+X-Plane 12 Installer
+xACT
+ZipCloud
